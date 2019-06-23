@@ -1,0 +1,29 @@
+{
+  "name": "restify",
+  "version": "1.0.0",
+  "description": "NodeJs restify framework",
+  "main": "app.ts",
+  "scripts": {
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "start": "nodemon --exec ts-node src/app.ts",
+    "serverbuild": "tsc --outDir public/server",
+    "startbuildnode": "node public/server/src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Akshay Prasad",
+  "license": "ISC",
+  "dependencies": {
+    "@types/restify-cors-middleware": "^1.0.1",
+    "@types/restify": "^7.2.11",
+    "inversify": "^5.0.1",
+    "inversify-restify-utils": "^3.4.0",
+    "nodemon": "^1.19.0",
+    "reflect-metadata": "^0.1.13",
+    "restify": "^8.3.2",
+    "restify-cors-middleware": "^1.1.1",
+    "typescript": "^3.4.5",
+    "ts-node": "^8.1.0",
+    "tsc-watch": "^2.2.1",
+    "tslint": "^5.16.0"
+  }
+}
